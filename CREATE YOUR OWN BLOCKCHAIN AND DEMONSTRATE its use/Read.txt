@@ -1,0 +1,7 @@
+1) open ganache
+2) Open file manager > go to the practical folder > Type cmd on path section
+
+CMD
+Command
+
+node main.js
