@@ -1,0 +1,16 @@
+*Open multiple cmd to perform
+
+npm install -g @angular/cli
+
+ng new my-dapp
+cd my-dapp
+
+npm install web3
+# or
+npm install ethers
+
+ng generate service blockchain
+
+ng generate component home
+
+ng serve

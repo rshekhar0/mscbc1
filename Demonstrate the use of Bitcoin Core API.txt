@@ -1,0 +1,15 @@
+https://bitcoin.org/en/download
+
+open bitcoin app
+
+window>console
+
+Inside console write
+
+getwalletinfo
+
+getnetworkinfo
+
+createwallet "testwallet"
+
+getwalletinfo

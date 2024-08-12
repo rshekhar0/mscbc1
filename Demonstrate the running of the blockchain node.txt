@@ -1,0 +1,40 @@
+https://geth.ethereum.org/downloads/
+---
+genesis.json
+---
+{
+  "config": {
+    "chainId": 1337,
+    "homesteadBlock": 0,
+    "eip150Block": 0,
+    "eip155Block": 0,
+    "eip158Block": 0,
+    "byzantiumBlock": 0,
+    "constantinopleBlock": 0,
+    "petersburgBlock": 0,
+    "istanbulBlock": 0
+  },
+  "difficulty": "1",
+  "gasLimit": "8000000",
+  "alloc": {}
+}
+
+---
+geth --datadir "C:\Ethereum\geth" init "C:\Ethereum\genesis.json"
+
+geth --syncmode "snap" --datadir "C:\Ethereum\geth" --http --http.addr "127.0.0.1" --http.port "8545" --http.api "eth,net,web3"
+
+If you get will error
+go to the C:\Ethereum\geth\geth
+clear the data 
+
+Then run the above code
+
+open CMD 2
+Write
+
+geth attach "http://127.0.0.1:8545"
+
+eth.syncing   // Check the sync status
+eth.blockNumber  // Get the latest block number
+net.peerCount   // Check the number of peers connected
