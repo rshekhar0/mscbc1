@@ -1,0 +1,12 @@
+// Load the contract artifact
+const SimpleStorage = artifacts.require("SimpleStorage");
+
+// Get the deployed instance
+let instance = await SimpleStorage.deployed();
+
+// Set a value
+await instance.set(42);
+
+// Get the value
+let value = await instance.get();
+console.log(value.toString()); // Should print "42"
