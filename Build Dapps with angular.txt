@@ -1,4 +1,5 @@
 *Open multiple cmd to perform
+*install node,geth,ganache
 
 npm install -g @angular/cli
 
